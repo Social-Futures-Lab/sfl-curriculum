@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/2fbde97865.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!----- navigation bar ----->
+    <div class="header">
+      <nav>
+        <a
+          href="https://social.cs.washington.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/small_sfl_logo.png" alt="Social Futures Lab Logo"
+        /></a>
+        <div class="website-title">
+          <h1>Social Computing Curriculum</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+          <ul>
+            <li><a class="link" href="index.html">HOME</a></li>
+            <li><a class="link" href="modules.html">MODULES</a>
+
+              <!-- sub navigation bar -->
+              <div class="sub-nav">
+                <ul>
+                  <li><a href="data-management.html">Data Management</a></li>
+                  <li><a href="encryption.html">Encryption</a></li>
+                  <li><a href="hci-careers.html">HCI Careers</a></li>
+                  <li><a href="machine-bias.html">Machine Learning & Bias</a></li>
+                  <li><a href="misinformation.html">Misinformation</a></li>
+                  <li><a href="online-behavior.html">Online Behavior</a></li>
+                  <li><a href="recommender-systems.html">Recommender Systems</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li><a class="link"href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </div>
+
+  <!-- Lesson info -->
+
+    <section class="section-head">
+      <h1>Human-Computer Interaction Careers Lesson</h1>
+      <p>
+        This lesson will help students understand the different careers in human-computer
+          interaction and social computing.
+      </p>
+    </section>
+
+        <section class="section-content">
+
+        <iframe
+        src="https://docs.google.com/document/d/e/2PACX-1vQnvjuGqg-1jVjQHCwWdCNln_tlIFossNyeK_WnphF4sMGs3LU4i1OW8SV2Bo7djtvhwB3AMEJmc1qK/pub?embedded=true"
+        width="100%" height="900px"></iframe
+      >
+    </section>
+
+    <section class="section-side">
+      <h1>Lesson Materials</h1>
+      <p>
+        <ul>
+        <li><a class="link" href="https://docs.google.com/document/d/1OMIWQua8MGpsxfnd0lAuzdNgFgbQsR7JrHSMCzNp1JQ/edit?usp=sharing" target="_blank">Lesson Outline
+        </a><br /></li>
+        <li><a class="link" href="https://docs.google.com/presentation/d/1w2HCxsQ8447K7qB52u_0z-FcyNdv9O5GJzooyplQC-M/edit?usp=sharing" target="_blank">Slideshow Presentation
+        </a><br /></li>
+        <li><a class="link" href="https://docs.google.com/document/d/1U5MsaqwMYcsJC7aGp952D9d45xo5FqQ943RRuWkF7JI/edit?usp=sharing" target="_blank">Redesign Handout
+        </a><br /></li>
+        <li><a class="link" href="https://docs.google.com/document/d/18DCc62omUxmoic_DmpdiT2qANgpiFN_ZChIWRvwz5e0/edit?usp=sharing" target="_blank">Opportunities Handout
+        </a><br /></li>
+      </ul>
+      </p>
+    </section>
+
+    <section class="section-side">
+      <h1>Additional Resources</h1>
+      <p>
+      <ul>
+      <li><a class="link" href="https://drexel.edu/cci/academics/graduate-programs/human-computer-interaction-ux/ms-in-information-human-computer-interaction-ux-careers/" target="_blank">Article: HUMAN-COMPUTER INTERACTION & USER EXPERIENCE CAREERS
+      </a><br></li>
+      <li><a class="link" href="https://www.rit.edu/careerservices/study/human-computer-interaction-ms" target="_blank">Article: Human-Computer Interaction MS
+      </a><br></li>
+      <li><a class="link" href="https://grad.soe.ucsc.edu/hci/jobs" target="_blank">Article: What Job Can You Get with an M.S. in Human Computer Interaction?
+      </a></li>
+    </ul>
+    </p>
+    </section>
+
+    <!-- slideshow -->
+    <div class="google-slides-container">
+      <section class="slide-content">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQeZTHiTY4Z6HhuVoK0vpgacWOSIMkhJjw66weB1d0sjSdmgYgm097OHAbQj1o977A_0vGpONVvKTEB/embed?start=true&loop=true&delayms=3000" frameborder="0" width="100%" height="515px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </section>
+  </div>
+
+    <!------ footer --->
+    <section class="footer">
+      <!------ visit request button ----->
+      <div class="action-button">
+        <a href="contact.html" class="visit-button"
+          ><i class="fa fa-paper-plane"></i> Request a Visit</a
+        >
+      </div>
+      <p>
+        <i class="fa fa-copyright"></i>Social Futures Lab 2022. Site built by
+        Kianna Bolante
+      </p>
+    </section>
+
+    <!----- javascript: toggle menu ----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

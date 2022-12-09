@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/2fbde97865.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!----- navigation bar ----->
+    <div class="header">
+      <nav>
+        <a
+          href="https://social.cs.washington.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/small_sfl_logo.png" alt="Social Futures Lab Logo"
+        /></a>
+        <div class="website-title">
+          <h1>Social Computing Curriculum</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+          <ul>
+            <li><a class="link" href="index.html">HOME</a></li>
+            <li><a class="link" href="modules.html">MODULES</a>
+
+              <!-- sub navigation bar -->
+              <div class="sub-nav">
+                <ul>
+                  <li><a href="data-management.html">Data Management</a></li>
+                  <li><a href="encryption.html">Encryption</a></li>
+                  <li><a href="hci-careers.html">HCI Careers</a></li>
+                  <li><a href="machine-bias.html">Machine Learning & Bias</a></li>
+                  <li><a href="misinformation.html">Misinformation</a></li>
+                  <li><a href="online-behavior.html">Online Behavior</a></li>
+                  <li><a href="recommender-systems.html">Recommender Systems</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li><a class="link"href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </div>
+
+    <!----- module topics ----->
+    <section class="section-head">
+      <h1>Social Computing Modules</h1>
+      <p>
+        Social computing is the study of how technology shapes human social
+        interaction (and society at large), how humans repurpose and shape
+        technology for social interaction, emergent effects and coevolution from
+        the combination of the two, and the design of new technology that
+        mediates human social interaction. <br />
+        <br />
+        Social computing becomes even more vital with the continuous effects of
+        the pandemic. It serves as a way to interact with others and affects how
+        users themselves integrate online tools into their everyday lives.
+        Secondary school students are active in the digital space and with the
+        lack of social computing resources for their age group, there can be
+        misconceptions and focus on the negative sides of social computing.
+      </p>
+      <p>
+        We created different learning modules that revolve around different
+        subtopics within social computing. These were designed specifically for
+        middle school and high school students.
+      </p>
+      <a href="modules.html" class="button">View Lesson Plans & Materials</a>
+    </section>
+    <section class="topic">
+      <div class="row">
+        <div class="topic-col-two">
+          <a class="link-module" href="data-management.html">
+          <h3>Data Management</h3>
+          <i class="fa fa-lock fa-3x"></i>
+          <p>
+            Students will understand their online presence and the impact of
+            their digital footprint.
+          </p>
+        </a>
+        </div>
+
+        <div class="topic-col-two">
+          <a class="link-module" href="online-behavior.html">
+          <h3>Online Behavior</h3>
+          <i class="fa fa-users fa-3x"></i>
+          <p>
+            Students will understand how their choices and interactions in
+            online environments affect their lives.
+          </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="topic-col-two">
+        <a class="link-module" href="recommender-systems.html">
+        <h3>Recommender Systems</h3>
+        <i class="fa fa-cogs fa-3x"></i>
+        <p>
+          Students will understand why and how certain media and ads are
+          presented to them.
+        </p>
+      </a>
+      </div>
+
+      <div class="topic-col-two">
+        <a class="link-module" href="machine-bias.html">
+        <h3>Machine Learning & Bias</h3>
+        <i class="fa fa-balance-scale fa-3x"></i>
+        <p>
+          Students will understand what machine learning is, and the
+          underlying biases that can affect them.
+        </p>
+      </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="topic-col-two">
+        <a class="link-module" href="encryption.html">
+        <h3>Encryption</h3>
+        <i class="fa fa-key fa-3x"></i>
+        <p>
+          Students will understand what machine learning is, and the
+          underlying biases that can affect them.
+        </p>
+      </a>
+      </div>
+
+      <div class="topic-col-two">
+        <a class="link-module" href="misinformation.html">
+        <h3>Misinformation</h3>
+        <i class="fa fa-flag fa-3x"></i>
+        <p>
+          Students will understand how misinformation can be distributed and
+          identified.
+        </p>
+      </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="topic-col-one">
+        <a class="link-module" href="hci-careers.html">
+        <h3>HCI Careers</h3>
+        <i class="fa fa-briefcase fa-3x"></i>
+        <p>
+          Students will understand the different careers in human-computer
+          interaction and social computing.
+        </p>
+      </div>
+  </section>
+
+    <!----- about section ----->
+    <section class="section-head">
+      <h1>Social Futures Lab: Social Computing Curriculum Team</h1>
+      <p>
+        We are a group of researchers from the University of Washington from the
+        Social Futures Lab that aim to learn how secondary students view social
+        computing and how their understanding of it can be enhanced. With our
+        work, we hope to provide best practices and effective resources for
+        teaching social computing education for teachers and to prompt better
+        understanding, interest, and critical thinking of various social
+        computing topics for students.
+      </p>
+      <a href="contact.html" class="button">Request a Visit to Your School</a>
+    </section>
+
+    <section class="about">
+      <div class="row">
+        <div class="about-col">
+          <img src="./assets/kianna-pic.jpeg" alt="Kianna" />
+          <h3>Kianna Bolante</h3>
+          <h5>(she/her)</h5>
+          <p>University of Washington Undergraduate Student</p>
+          <a href="mailto:kbolan@cs.washington.edu" class="contact-btn"
+            >Contact</a
+          >
+        </div>
+
+        <div class="about-col">
+          <img src="./assets/kevin-pic.jpg" alt="Kevin" />
+          <h3>Kevin Chen</h3>
+          <h5>(he/him)</h5>
+          <p>Clevland STEM High School Student</p>
+          <a href="mailto:3kechen@gmail.com" class="contact-btn">Contact</a>
+        </div>
+
+        <div class="about-col">
+          <img src="./assets/jim-pic.jpg" alt="Jim" />
+          <h3>Jim Chen</h3>
+          <h5>(he/him)</h5>
+          <p>University of Washington PhD Student</p>
+          <a href="mailto:cqz@cs.washington.edu" class="contact-btn">Contact</a>
+        </div>
+
+        <div class="about-col">
+          <img src="./assets/amy-pic.png" alt="Amy" />
+          <h3>Amy Zhang</h3>
+          <h5>(she/her)</h5>
+          <p>University of Washington Assistant Professor</p>
+          <a href="mailto:axz@cs.uw.edu" class="contact-btn">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!------ footer ----->
+    <section class="footer">
+      <!------ visit request button ----->
+      <div class="action-button">
+        <a href="contact.html" class="visit-button"><i class="fa fa-paper-plane"></i>
+          Request a Visit</a>
+
+    </div>
+      <p>
+        <i class="fa fa-copyright"></i>Social Futures Lab 2022. Site built by
+        Kianna Bolante
+      </p>
+    </section>
+
+    <!----- javascript: toggle menu ----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

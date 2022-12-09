@@ -1,0 +1,680 @@
+/*----- general -----*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-image: url("./assets/background.png");
+  background-size: 750px;
+  background-repeat: repeat;
+  font-family: monospace, sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-top: auto;
+  color: #2f5294;
+}
+
+h1 {
+  color: #2f5294;
+}
+
+h2 {
+  color: #2f5294;
+  font-size: medium;
+  font-weight: 600;
+}
+
+/*----- navigation bar -----*/
+
+.header {
+  min-height: 1vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border-bottom: 3px solid #2f5294;
+}
+
+nav {
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 50px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #2f5294;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links ul li ::after {
+  /* content: ""; */
+  width: 0%;
+  height: 2px;
+  background: #2f5294;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.nav-links ul li :hover::after {
+  width: 100%;
+}
+
+.active .nav-links ul li:hover  {
+  color: #F48080;
+  border-radius: 3px;
+}
+
+.website-title h1 {
+  font-size: 24px;
+}
+
+.website-title {
+  text-align: left;
+  display: inline-block;
+  padding: 12px;
+}
+
+.sub-nav{
+  display: none;
+}
+
+
+.nav-links ul li:hover .sub-nav{
+  display: block;
+  position: absolute;
+  background: #d2def4;
+  margin-left: -15px;
+}
+
+.nav-links ul li:hover .sub-nav ul{
+  display: block;
+  margin: 10px;
+}
+
+.nav-links ul li:hover .sub-nav ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 2px dotted #2f5294;
+  border-radius: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.nav-links ul li:hover .sub-nav ul li:last-child{
+  border-bottom: none;
+}
+
+.nav-links ul li:hover .sub-nav ul li a:hover{
+  color: #F48080;
+  content: none;
+}
+
+
+/*----- section side -----*/
+
+.section-side {
+  margin: auto;
+  margin-top: 1%;
+  margin-right: 10%;
+  width: 15%;
+  background-color: #d2def4;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+  border: 3px solid #2f5294;
+  text-align: center;
+  float: right;
+  padding: 20px 7px;
+}
+
+.section-side h1 {
+  font-size: 25px;
+  color: #2f5294;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.section-side p {
+  color: #2f5294;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 2;
+  text-align: left;
+}
+
+.section-side a {
+  color: #2f5294;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  text-align: left;
+}
+
+.section-side ul {
+  color: #2f5294;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.section-side li {
+  margin-bottom: 10px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* links */
+
+.link:hover  {
+  color: #F48080;
+}
+
+.link-module  {
+  text-decoration: none;
+}
+
+.link:active  {
+  color: #F48080;
+}
+
+.section-side h1 {
+  color: #2f5294;
+  margin-bottom: 20px;
+  padding: 0;
+
+}
+
+.section-content {
+  margin: auto;
+  margin-left: 10%;
+  float: left;
+  width: 55%;
+  background-color: #2f5294;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+  border: 3px solid white;
+  padding: 30px 30px;
+}
+
+.slide-content {
+  margin: auto;
+  width: 60%;
+  background-color: #2f5294;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+  border: 3px solid white;
+  padding: 30px 30px;
+}
+
+.google-slides-container{
+  position: relative;
+  width: 100%;
+  padding-top: 5%;
+  overflow: hidden;
+  display: inline-block;
+  margin: auto
+}
+
+/*----- section head & button -----*/
+
+.section-head {
+  margin: 50px auto;
+  width: 55%;
+  background-color: #2f5294;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+  border: 3px solid white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.section-head h1 {
+  color: white;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.section-head p {
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.25;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2f5294;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: #d2def4;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+  border: 2px #d2def4 solid;
+  background: white;
+  color: #2f5294;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/*----- small screen ------*/
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .website-title h1 {
+    font-size: 16px;
+  }
+  nav img {
+    width: 30px;
+  }
+  .nav-links ul li a {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #2f5294;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 20px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .section-head {
+    width: 80%;
+  }
+  .section-head h1 {
+    font-size: 20px;
+  }
+  .section-head p {
+    font-size: 12px;
+  }
+  .button {
+    padding: 10px;
+  }
+
+  .request-form iframe{
+    width: 100%;
+  }
+
+  /* .section-content{
+    bottom: 0;
+    width: 100%;
+    height: 256px;
+}
+
+  .section-content iframe{
+    border: 0;
+    width: 826px;
+    height: 1066px;
+  } */
+
+  /* .section-content{
+		position: relative;
+		background-color: #eee;
+		left:   16px;
+		top:    16px;
+		right:  16px;
+		bottom: 16px;
+  }
+		.google-doc {
+			position: relative;
+			width: 600px;
+			height: 600px;
+			background-color: #fff;
+			transform-origin: top left;
+			transition: all 100ms ease-in-out !important;
+			box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.32);
+    }
+
+			.google-doc iframe {
+				border: 0;
+				width: 600px;
+				height: 600px;
+			} */
+
+  .section-side {
+    width: 80%;
+    margin: 10px;
+  }
+  .section-side li {
+    font-size: 12px;
+  }
+
+  .section-content {
+    width: 60%;
+    margin-left: 10%;
+    padding: 30px 30px;
+  }
+
+  .google-slides-container{
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    overflow: hidden;
+}
+
+.google-slides-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.google-docs-container{
+  position: relative;
+  width: 100%;
+  height: 200%;
+  padding-top: 5%;
+}
+
+.google-docs-container iframe{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+}
+
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px;
+  color: #2f5294;
+}
+
+.fa {
+  display: block;
+  color: #2f5294;
+  padding: 5px;
+}
+
+/*----- about -----*/
+
+.about {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.about-col {
+  flex-basis: 20%;
+  border-radius: 7px;
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 30px 5px;
+  background: #d2def4;
+  box-sizing: border-box;
+  border: 3px solid #2f5294;
+}
+
+.about-col img {
+  width: 70%;
+  border: 3px solid #2f5294;
+  border-radius: 7px;
+}
+
+.about-col p {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.about-col h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.about-col h5 {
+  color: #2f5294;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.contact-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 13px;
+  background: #2f5294;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-btn:hover {
+  border: 2px solid;
+  background: white;
+  color: #2f5294;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/*----- home module topics -----*/
+
+.topic {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.topic h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.topic p {
+  color: #2f5294;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.topic-col {
+  flex-basis: 31%;
+  background: #d2def4;
+  border-radius: 7px;
+  border: 3px solid #2f5294;
+  padding: 15px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.topic-col-two {
+  flex-basis: 45%;
+  background: #d2def4;
+  border-radius: 7px;
+  border: 3px solid #2f5294;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.topic-col-one {
+  margin: 10px auto;
+  width: 55%;
+  flex-basis: 45%;
+  background: #d2def4;
+  border-radius: 7px;
+  border: 3px solid #2f5294;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.topic-col:hover {
+  box-shadow: 0 0 20px 0px rgba(47, 82, 148, 1);
+}
+
+.topic-col-two:hover {
+  box-shadow: 0 0 20px 0px rgba(47, 82, 148, 1);
+}
+
+.topic-col-one:hover {
+  box-shadow: 0 0 20px 0px rgba(47, 82, 148, 1);
+}
+
+/*----- accordian module topics -----*/
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  padding: 10px;
+  width: 100%;
+  text-align: middle;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.container{
+  /* position: absolute; */
+  position: relative;
+  margin: auto;
+  left: 63%;
+  transform: translate(-50%);
+  width: 90%;
+  }
+
+.container .p{
+  color: #2f5294;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/*----- request a visit action button -----*/
+
+.action-button{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.visit-button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 10px 10px;
+  font-size: 13px;
+  background: #2f5294;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.visit-button:hover {
+  border: 2px white solid;
+  background: #d2def4;
+  color: #2f5294;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.visit-button .fa {
+  color: #d2def4;
+}
+
+.visit-button:hover .fa {
+  color: #2f5294;
+}
+
+/*----- footer -----*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  display: inline-block;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.footer i {
+  display: inline-block;
+  font-style: bold;
+}
+
+/*----- visit request form -----*/
+.request-form {
+  text-align: center;
+  margin-top: 70px;
+}

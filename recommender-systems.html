@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/2fbde97865.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!----- navigation bar ----->
+    <div class="header">
+      <nav>
+        <a
+          href="https://social.cs.washington.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/small_sfl_logo.png" alt="Social Futures Lab Logo"
+        /></a>
+        <div class="website-title">
+          <h1>Social Computing Curriculum</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+          <ul>
+            <li><a class="link" href="index.html">HOME</a></li>
+            <li><a class="link" href="modules.html">MODULES</a>
+
+              <!-- sub navigation bar -->
+              <div class="sub-nav">
+                <ul>
+                  <li><a href="data-management.html">Data Management</a></li>
+                  <li><a href="encryption.html">Encryption</a></li>
+                  <li><a href="hci-careers.html">HCI Careers</a></li>
+                  <li><a href="machine-bias.html">Machine Learning & Bias</a></li>
+                  <li><a href="misinformation.html">Misinformation</a></li>
+                  <li><a href="online-behavior.html">Online Behavior</a></li>
+                  <li><a href="recommender-systems.html">Recommender Systems</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li><a class="link"href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </div>
+
+  <!-- Lesson info -->
+
+    <section class="section-head">
+      <h1>Reccomender Systems Lesson</h1>
+      <p>
+        Content for this module will be coming soon! Check back in 2023. Thank you for your patience :)
+      </p>
+    </section>
+
+    <!------ footer --->
+    <section class="footer">
+      <!------ visit request button ----->
+      <div class="action-button">
+        <a href="contact.html" class="visit-button"
+          ><i class="fa fa-paper-plane"></i> Request a Visit</a
+        >
+      </div>
+      <p>
+        <i class="fa fa-copyright"></i>Social Futures Lab 2022. Site built by
+        Kianna Bolante
+      </p>
+    </section>
+
+    <!----- javascript: toggle menu ----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
