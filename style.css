@@ -24,12 +24,15 @@ p {
 
 h1 {
   color: #2f5294;
+  font-size: 30px;
 }
 
 h2 {
-  color: #2f5294;
-  font-size: medium;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 550;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
 /*----- navigation bar -----*/
@@ -161,6 +164,19 @@ nav img {
   font-weight: bold;
 }
 
+.section-side .visit-button a {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-side .visit-button:hover{
+  border: 2px #2f5294;
+  background: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
 .section-side p {
   color: #2f5294;
   margin-bottom: 20px;
@@ -170,7 +186,7 @@ nav img {
   text-align: left;
 }
 
-.section-side a {
+.section-side li a {
   color: #2f5294;
   font-family: "Be Vietnam Pro", sans-serif;
   text-decoration: none;
@@ -238,10 +254,10 @@ nav img {
 .google-slides-container{
   position: relative;
   width: 100%;
-  padding-top: 5%;
   overflow: hidden;
   display: inline-block;
-  margin: auto
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 /*----- section head & button -----*/
@@ -455,6 +471,19 @@ h3 {
   text-align: center;
 }
 
+.about .fa {
+  color: #d2def4;
+}
+
+.contact-btn:hover .fa{
+  color: #2f5294;
+}
+
+.contact-btn .fa {
+  float: left;
+  margin-right: 5px;
+}
+
 .about-col {
   flex-basis: 20%;
   border-radius: 7px;
@@ -489,6 +518,15 @@ h3 {
   margin-bottom: 16px;
 }
 
+.about-col h6 {
+  color: #2f5294;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .contact-btn {
   display: inline-block;
   text-decoration: none;
@@ -496,7 +534,7 @@ h3 {
   color: white;
   border: 2px solid white;
   border-radius: 7px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin: 10px;
   font-size: 13px;
   background: #2f5294;
@@ -511,6 +549,91 @@ h3 {
   color: #2f5294;
   font-weight: bold;
   transition: 0.5s;
+}
+
+/*----- lesson downloads -----*/
+
+.lesson-downloads {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.lesson-downloads .fa {
+  color: #d2def4;
+}
+
+.lesson-downloads .fa {
+  color: #d2def4;
+}
+
+.lesson-downloads i {
+  color: #d2def4;
+}
+
+.download-col {
+  flex-basis: 20%;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 20px 5px;
+  background: #d2def4;
+  box-sizing: border-box;
+  border: 3px solid #2f5294;
+}
+
+.download-col li a {
+  color: #2f5294;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  text-align: left;
+
+  color: #2f5294;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 2;
+  text-align: left;
+}
+
+.download-col ul {
+  color: #2f5294;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.download-col li {
+  margin-bottom: 10px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+
+.download-col p {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.download-col h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.download-col h5 {
+  color: #2f5294;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.download-col h6 {
+  color: #2f5294;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /*----- home module topics -----*/
