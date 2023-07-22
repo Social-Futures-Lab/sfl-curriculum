@@ -341,7 +341,7 @@ nav .fa {
   nav .fa {
     display: block;
     color: #2f5294;
-    margin: 10px;
+    /* margin-right: 10px; */
     font-size: 22px;
     cursor: pointer;
   }
@@ -360,6 +360,12 @@ nav .fa {
   .section-head p {
     font-size: 12px;
   }
+  .section-content h2{
+    font-size: 20px;
+  }
+  .section-side h1{
+    font-size: 20px;
+  }
   .button {
     padding: 10px;
   }
@@ -367,42 +373,6 @@ nav .fa {
   .request-form iframe{
     width: 100%;
   }
-
-  /* .section-content{
-    bottom: 0;
-    width: 100%;
-    height: 256px;
-}
-
-  .section-content iframe{
-    border: 0;
-    width: 826px;
-    height: 1066px;
-  } */
-
-  /* .section-content{
-		position: relative;
-		background-color: #eee;
-		left:   16px;
-		top:    16px;
-		right:  16px;
-		bottom: 16px;
-  }
-		.google-doc {
-			position: relative;
-			width: 600px;
-			height: 600px;
-			background-color: #fff;
-			transform-origin: top left;
-			transition: all 100ms ease-in-out !important;
-			box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.32);
-    }
-
-			.google-doc iframe {
-				border: 0;
-				width: 600px;
-				height: 600px;
-			} */
 
   .section-side {
     width: 80%;
@@ -557,10 +527,6 @@ h3 {
   width: 80%;
   margin: auto;
   text-align: center;
-}
-
-.lesson-downloads .fa {
-  color: #d2def4;
 }
 
 .lesson-downloads .fa {
@@ -800,4 +766,133 @@ h3 {
 .request-form {
   text-align: center;
   margin-top: 70px;
+}
+
+/* test */
+.link-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.link-container i {
+  margin-left: -15%;
+}
+
+
+.nav-sidebar {
+  overflow: auto;
+  max-height: 100vh;
+}
+
+@media (max-width: 575.98px) {
+  .nav-sidebar {
+      flex: auto;
+      height: auto;
+  }
+}
+
+.nav-sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-sidebar .nav-header {
+  font-weight: bold;
+}
+
+.nav-sidebar li a {
+  display: block;
+  width: 100%;
+  color: var(--dark-teal);
+  font-size: 11pt;
+}
+
+.nav-sidebar li.active a,
+.nav-sidebar li a:hover,
+.nav-sidebar li a:focus,
+.nav-sidebar a.nav-link.active {
+  background-color: var(--teal);
+  color: white;
+  width: 100%;
+}
+
+.sticky {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 60px;
+  align-self: flex-start;
+}
+
+.nav-link {
+  padding: 0.2em 0.5em;
+}
+
+@media print {
+  .nav-sidebar {
+      display: none;
+  }
+}
+
+.side-nav-header:before {
+  content: " ";
+  display: block;
+  height: 70px;
+  margin-top: -70px;
+  visibility: hidden;
+}
+
+.side-nav-1 {
+  padding-left: 20px;
+}
+
+/* section side left */
+.section-side-left {
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 10%;
+  background-color: #d2def4;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+  border: 3px solid #2f5294;
+  text-align: center;
+  float: left;
+  padding: 20px 7px;
+}
+
+.section-side-left h1 {
+  font-size: 25px;
+  color: #2f5294;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.section-side-left p {
+  color: #2f5294;
+  line-height: 2;
+  text-align: left;
+}
+
+.section-side-left li a {
+  color: #2f5294;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  text-align: left;
+}
+
+.section-side-left ul {
+  color: #2f5294;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  margin-top: 5%;
+  text-align: left;
+}
+
+.section-side-left li {
+  margin-bottom: 10px;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
